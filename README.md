@@ -36,7 +36,7 @@ TestNG added: Parameterization through `@DataProvider` and this helped us to ach
 How does this work?
 This task extends task from assignment 1 by using TestNG to automate multiple test cases. CSV data is provided through a @DataProvider, and each row runs as a separate test in @Test while outputs, time, memory, and status are collected in Result objects. TestNG manages the test flow, and the HTML report is generated after all tests, making the process fully parameterized and scalable.
 
-Benefits I observed using testng
+Benefits I observed using testng:
 Scaling test cases is very easy and integration becomes smooth
 Test reports generate without extra effort and aslo we have clear control over execution order
 
