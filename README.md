@@ -70,7 +70,7 @@ Assignment 2:
 `Assignments/src/test/java/testcases/ChatGPTToCodeChefTest_WithTestNG.java`
 
 Assignment 3: 
-Assignments/src/main/java/JdbcPojo/Main.java`
+`Assignments/src/main/java/JdbcPojo/Main.java`
 
 Automation reports for assignment 1 and 2 can be found at:
 `Assignments/reports/report.html`
