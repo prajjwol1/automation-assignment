@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>ChatGPT Mock - Python Generator</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    textarea { width: 100%; height: 140px; font-family: monospace; }
+    input[type="text"]{ width: 100%; padding: 8px; }
+    button{ padding: 8px 12px; margin-top: 8px; }
+    .label { font-weight: bold; margin-top: 12px; display:block; }
+  </style>
+</head>
+<body>
+  <h2>ChatGPT Mock — Python Script Generator</h2>
+
+  <label class="label" for="prompt">Prompt</label>
+  <textarea id="prompt"></textarea>
+
+  <br/>
+  <button id="generate">Generate</button>
+
+  <h3>Generated Python Script</h3>
+  <!-- Using textarea so Selenium can read and copy value easily -->
+  <textarea id="generated" readonly></textarea>
+
+  <script>
+    document.getElementById('generate').addEventListener('click', function() {
+      var prompt = document.getElementById('prompt').value.toLowerCase();
+      var out = "";
+      // Very small deterministic generator for the 'add two numbers' prompt
+      if (prompt.includes('add') || prompt.includes('sum') || prompt.includes('two integers')) {
+        out = "#!/usr/bin/env python3\nimport sys\n\ntry:\n    lines = []\n    for i in range(2):\n        lines.append(sys.stdin.readline().strip())\n    a = float(lines[0])\n    b = float(lines[1])\n    res = a + b\n    # print as integer if both are integers\n    if a.is_integer() and b.is_integer():\n        print(int(res))\n    else:\n        print(res)\nexcept Exception:\n    print('ERROR')\n";
+      } else {        out = "# Unsupported prompt - generated fallback\\nprint('UNSUPPORTED_PROMPT')\\n";
+      }
+      document.getElementById('generated').value = out;
+    });
+
+    // Auto-generate on load
+    window.addEventListener('load', function(){ document.getElementById('generate').click(); });
+  </script>
+</body>
+</html>
