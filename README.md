@@ -80,7 +80,9 @@ Automation reports for assignment 1 and 2 can be found at:
 CSV output for assignment 3 can be found at:
 `Assignments/salary_gt_10k.csv`
 
-Test Cases Included for Assignment 1 and 2:
+# Test Cases Included for Assignment 1 and 2:
 - Check the response for valid input
+  (this will check how our python script handles valid inputs and provides output as expected)
 - Check the response for invalid input
+  (this will check our python script handles invalid inputs and provides error message gracefully)
 
