@@ -66,7 +66,7 @@ IntelliJ, Eclipse, or VS Code
  Assignment 1:
 `Assignments/src/test/java/testcases/ChatGPTToCodeChefTest_NoTestNG.java`
 
-#Assignment 2:
+Assignment 2:
 `Assignments/src/test/java/testcases/ChatGPTToCodeChefTest_WithTestNG.java`
 
 Assignment 3: 
