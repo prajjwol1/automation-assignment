@@ -53,9 +53,9 @@ Future QA roles will be more aligned with being problem solvers and
 evaluators of AI-driven systems. We will continue to matter, but
 continuous learning is important.
 
-# Screenshots: Actual screenshots are available inside the `screenshots`
-folder: MockGPT response page  CodeChef
-output TestNG HTML report SQLite database results
+# Screenshots: Actual screenshots are available inside the `screenshots` folder:
+`HtmlReportSrc`
+`TestNGReportSrc`
 
 # Dependencies: 
 Java 17 Chrome and Chromedriver Any editor such as
