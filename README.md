@@ -82,7 +82,7 @@ CSV output for assignment 3 can be found at:
 
 # Test Cases Included for Assignment 1 and 2:
 - Check the response for valid input
-  (this will check how our python script handles valid inputs and provides output as expected)
+  (this will check how does our python script handles valid inputs and provides output as expected in codechef page output section)
 - Check the response for invalid input
-  (this will check our python script handles invalid inputs and provides error message gracefully)
+  (this will check how does our python script handles invalid inputs and provides error message gracefully in codechef page output section)
 
