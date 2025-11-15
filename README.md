@@ -11,7 +11,7 @@ What I automated:
 2. Navigate to MockGPT
 3. Enter the prompt:
   `Please provide a Python function that accepts parameters from the command line and returns the addition result.`
-4. MockGPT returns a predefined Python function 5. Selenium copies the Python function
+4. MockGPT returns a predefined Python function and Selenium copies the Python function
 5. Saves it as a `.py` file
 6. Reads test data from CSV
 7. Opens the CodeChef IDE
