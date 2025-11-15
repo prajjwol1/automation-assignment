@@ -38,7 +38,7 @@ This task extends task from assignment 1 by using TestNG to automate multiple te
 
 Benefits I observed using testng:
 Scaling test cases is very easy and integration becomes smooth
-Test reports generate without extra effort and aslo we have clear control over execution order
+Test reports generate without extra effort and we also have clear control over execution order
 
 
 # Assignment 3 -- JDBC, POJO, and CSV
