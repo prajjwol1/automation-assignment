@@ -3,9 +3,7 @@ assignments.
 
 Since the real ChatGPT UI cannot be automated due to strong bot
 detection and dynamic loading, I created a MockGPT static HTML page
-that mimics ChatGPT's response behavior. This allowed me to perform
-stable and predictable Selenium automation. I attempted live ChatGPT
-automation but it was not possible due to bot protection.
+that mimics ChatGPT's response behavior.
 
 # Assignment 1 -- UI Automation and HTML Report
 What I automated: 
@@ -17,23 +15,31 @@ What I automated:
 5. Saves it as a `.py` file
 6. Reads test data from CSV
 7. Opens the CodeChef IDE
-8. Executes the Python function with different test inputs 10. Collects output, status, time, memory usage, and pass or fail
-9. Generates an HTML automation report
+8. Executes the Python function with different test inputs.
+9. Collects output, status, time, memory usage, and pass or fail
+10. Generates an HTML automation report
 
 Why MockGPT:
 Real ChatGPT uses heavy bot detection and automation
 guards. It repeatedly showed a loading overlay, so automation was not
 reliable. A static MockGPT solved this by returning a consistent output.
 
+How does this work?
+In this task, the project uses Selenium WebDriver with DriverManager to open a local static ChatGPT page (ChatGPTMockPage), sends a prompt to generate Python code, and stores the script. The code is pasted into CodeChef IDE (CodeChefIDEPage) and executed with test data read from a CSV (CSVDataReader). For each test case, the output, execution time, memory usage, and pass/fail status are recorded. Finally, HTMLReportGenerator creates an HTML report summarizing all test results.
+
 # Assignment 2 -- TestNG Integration and Data Provider
-What TestNG added: Parameterization through `@DataProvider` this helped us to achieve: 
-- Cleaner test structure
+TestNG added: Parameterization through `@DataProvider` and this helped us to achieve: 
+-  Cleaner test structure
 -  Reusable setup and teardown
 -  Better reporting Ability to scale more test cases Support for parallel execution Automatic TestNG HTML report generation
 
-Benefits I observed: 
+How does this work?
+This task extends task from assignment 1 by using TestNG to automate multiple test cases. CSV data is provided through a @DataProvider, and each row runs as a separate test in @Test while outputs, time, memory, and status are collected in Result objects. TestNG manages the test flow, and the HTML report is generated after all tests, making the process fully parameterized and scalable.
+
+Benefits I observed using testng
 Scaling test cases is very easy and integration becomes smooth
 Test reports generate without extra effort and aslo we have clear control over execution order
+
 
 # Assignment 3 -- JDBC, POJO, and CSV
 Steps implemented: 
@@ -46,6 +52,9 @@ Steps implemented:
 - Exporting employees with salary greater than 10000
 - Exporting employees who joined within the last 30 days
 - Displaying employees sorted alphabetically by name
+
+How does this work?
+Task 3 focuses on database operations using SQLite and JDBC. DatabaseUtil creates the salary table, and DataGenerator inserts 100 random employee records. A Salary POJO represents each row. Operations include printing the highest salary, exporting employees with salary > 10k or joined last month to CSV (CSVDataWriter), and printing all employees in ascending order. This demonstrates structured data handling, SQL queries, and CSV export for backend workflow.
 
 # Assignment 5 -- My Thoughts on QA in the AI Age
 I believe QA will not disappear but it will continue to evolve. AI can
