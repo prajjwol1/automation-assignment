@@ -54,7 +54,7 @@ Steps implemented:
 - Displaying employees sorted alphabetically by name
 
 How does this work?
-Task 3 focuses on database operations using SQLite and JDBC. DatabaseUtil creates the salary table, and DataGenerator inserts 100 random employee records. A Salary POJO represents each row. Operations include printing the highest salary, exporting employees with salary > 10k or joined last month to CSV (CSVDataWriter), and printing all employees in ascending order. This demonstrates structured data handling, SQL queries, and CSV export for backend workflow.
+Task 3 focuses on database operations using SQLite and JDBC. DatabaseUtil creates the salary table, and DataGenerator inserts 100 random employee records. A Salary POJO represents each row. Operations include printing the highest salary, exporting employees with salary > 10k or joined last month to CSV (CSVDataWriter), and printing all employees in ascending order. 
 
 # Assignment 5 -- My Thoughts on QA in the AI Age
 I believe QA will not disappear but it will continue to evolve. AI can
