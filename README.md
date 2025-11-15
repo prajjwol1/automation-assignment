@@ -37,8 +37,10 @@ Test reports generate without extra effort and aslo we have clear control over e
 
 # Assignment 3 -- JDBC, POJO, and CSV
 Steps implemented: 
-- Connected to SQLite database Created the `salary` table
-- Inserted 100 random employee records Created the Salary POJO class
+- Connected to SQLite database
+- Created the `salary` table
+- Inserted 100 random employee records
+- Created the Salary POJO class
 - Performed the following operations:
 - Finding the highest salary
 - Exporting employees with salary greater than 10000
